@@ -7,6 +7,7 @@ import Block from "./components/Block/Block";
 import content from "./content";
 import styled from "styled-components";
 import {Motion, spring} from "react-motion";
+import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
 
 const Cursor = styled.div`
 width: 40px;
@@ -26,22 +27,21 @@ class App extends React.Component{
         left: 0
     };
     handleClick(event){
-
         var top = event.pageY - 20 + "px";
         var left = event.pageX - 20 + "px";
         this.setState({opacity: !this.state.opacity, top: top, left: left });
     }
-
-    handleOut(event){
+    handleOut(){
         this.setState({opacity: !this.state.opacity});
     }
         render(){
-        return(
+            return(
             <div className={s.mainBlock} onMouseDown={this.handleClick.bind(this)} onMouseUp={this.handleOut.bind(this)} >
                 <Menu />
                  <Slide/>
                  <Block headline={content.aboutUs.headline} text={content.aboutUs.text} bgColor={content.aboutUs.bgColor}/>
-
+                <Block headline={content.something.headline} text={content.something.text} bgColor={content.something.bgColor}/>
+                 <ServiceBlock />
                 {this.state.opacity ?
                     <Motion defaultStyle={{scale: (1)}} style={{scale: spring(0)}}>
                         {(style)=>(
@@ -54,9 +54,9 @@ class App extends React.Component{
                             )}
                     </Motion>
                 : "" }
-
             </div>
         )
+
     }
 }
 
