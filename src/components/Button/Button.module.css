@@ -1,0 +1,14 @@
+.btnPrimary{
+    background-color: rgba(0, 242, 255, .8);
+    padding: 20px 70px 20px 70px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btnPrimary:hover{
+    background-color: rgba(0, 242, 255, 1);
+    color: white;
+}

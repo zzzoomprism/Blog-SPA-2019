@@ -1,0 +1,9 @@
+
+
+#mainNavBar{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: transparent !important;
+}
