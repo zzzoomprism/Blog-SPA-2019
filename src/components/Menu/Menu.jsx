@@ -4,7 +4,7 @@ import S from './Menu.module.css';
 class Menu extends React.Component{
     render(){
         return <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id={S.mainNavBar}>
-                        <a className="navbar-brand" href="#">Navbar</a>
+                        <a className="navbar-brand" href="#">Start Bootstrap</a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -14,15 +14,12 @@ class Menu extends React.Component{
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto" id={S.listOfRef}>
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Link</a>
+                                    <a className="nav-link" href="#">About <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Dropdown
+                                        Services
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a className="dropdown-item" href="#">Action</a>
@@ -32,7 +29,11 @@ class Menu extends React.Component{
                                     </div>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link disabled" href="#">Disabled</a>
+                                    <a className="nav-link" href="#">Portfolio </a>
+                                </li>
+
+                                <li className="nav-item">
+                                    <a className="nav-link " href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>

@@ -24,6 +24,7 @@
     color: lightgray;
     padding-left: 50px;
     padding-right: 50px;
+    letter-spacing: 2px;
 }
 
 .slideModule{
@@ -40,6 +41,6 @@
     height: 800px;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.3);
+    background: linear-gradient(to bottom, rgba(0, 242, 255, .2) 20%, #333);
 }
 
