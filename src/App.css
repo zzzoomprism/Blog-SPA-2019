@@ -13,4 +13,18 @@ hr{
 
 h1, h2, h3, h4, h5, p, span, li, a{
     font-family: 'Raleway', sans-serif;
+    cursor: default;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 200;
+
+}
+
+h5{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
 }

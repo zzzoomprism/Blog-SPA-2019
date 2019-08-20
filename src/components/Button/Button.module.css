@@ -5,6 +5,7 @@
     color: white;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
     text-transform: uppercase;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -26,6 +27,7 @@
     color: #333;
     font-weight: 800;
     font-size: 20px;
+    cursor: pointer;
     text-transform: uppercase;
     -webkit-transition: .5s;
     -moz-transition: .5s;

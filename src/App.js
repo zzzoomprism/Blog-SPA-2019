@@ -8,6 +8,7 @@ import content from "./content";
 import styled from "styled-components";
 import {Motion, spring} from "react-motion";
 import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
+import Gallery from "./components/Gallery/Gallery";
 
 const Cursor = styled.div`
 width: 40px;
@@ -40,8 +41,10 @@ class App extends React.Component{
                 <Menu />
                  <Slide/>
                  <Block headline={content.aboutUs.headline} text={content.aboutUs.text} bgColor={content.aboutUs.bgColor}/>
-                <Block headline={content.something.headline} text={content.something.text} bgColor={content.something.bgColor}/>
+                <Gallery/>
                  <ServiceBlock />
+                <Block headline={content.something.headline} text={content.something.text} bgColor={content.something.bgColor}/>
+
                 {this.state.opacity ?
                     <Motion defaultStyle={{scale: (1)}} style={{scale: spring(0)}}>
                         {(style)=>(
