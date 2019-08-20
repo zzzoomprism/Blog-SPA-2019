@@ -14,7 +14,7 @@ margin-bottom: 10px;
 class Hr extends React.Component{
     render() {
         return(
-            <Motion defaultStyle={{scaleX:  0}} style={{scaleX: spring(1)}}>
+            <Motion defaultStyle={{scaleX:  0}} style={{scaleX: spring(1, { stiffness: 30, damping: 30 })}}>
                 {(style)=>(
                     <Line style={{
                         transform: `scaleX(${style.scaleX})`,
