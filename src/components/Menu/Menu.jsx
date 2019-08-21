@@ -1,10 +1,18 @@
 import React from 'react';
 import S from './Menu.module.css';
+import { Link } from "react-scroll";
 
-class Menu extends React.Component{
-    render(){
-        return <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id={S.mainNavBar}>
-                        <a className="navbar-brand" href="#">Start Bootstrap</a>
+function Menu(props){
+        var menuClassName = "navbar fixed-top navbar-expand-lg navbar-dark bg-dark ";
+        return <nav className={props.menuColor === 0 ? menuClassName + S.mainNavBar : menuClassName + S.colorNavBar}>
+            <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {1000}
+            ><a className="navbar-brand" href="#">Start Bootstrap</a></Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -13,32 +21,57 @@ class Menu extends React.Component{
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto" id={S.listOfRef}>
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#">About <span className="sr-only">(current)</span></a>
+                                <Link
+                                    activeClass="active"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration= {1000}
+                                ><li className="nav-item nav-link">
+                                   About
                                 </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="portfolio"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration= {500}
+                                >
+                                    <li className="nav-item nav-link">
+                                        Portfolio
+                                    </li>
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="services"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration= {500}
+                                >
+                                    <li className="nav-item nav-link">
                                         Services
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Action</a>
-                                        <a className="dropdown-item" href="#">Another action</a>
-                                        <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Portfolio </a>
-                                </li>
+                                    </li>
+                                </Link>
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration= {500}
+                                >
+                                    <li className="nav-item nav-link">
+                                        Contact
+                                    </li>
+                                </Link>
 
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">Contact</a>
-                                </li>
                             </ul>
                         </div>
                     </nav>
-    };
 }
 
 export default Menu;

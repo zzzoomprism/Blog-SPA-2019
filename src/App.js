@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import s from "./App.css";
 import Menu from './components/Menu/Menu';
 import Slide from "./components/Slide/Slide";
@@ -9,6 +8,7 @@ import styled from "styled-components";
 import {Motion, spring} from "react-motion";
 import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
 import Gallery from "./components/Gallery/Gallery";
+import Footer from "./components/Footer/Footer";
 
 const Cursor = styled.div`
 width: 40px;
@@ -22,10 +22,11 @@ z-index: 1000;
 `;
 
 class App extends React.Component{
-    state = {
+        state = {
         opacity: 0,
         top: 0,
-        left: 0
+        left: 0,
+        menu: 0
     };
     handleClick(event){
         var top = event.pageY - 20 + "px";
@@ -35,15 +36,30 @@ class App extends React.Component{
     handleOut(){
         this.setState({opacity: !this.state.opacity});
     }
-        render(){
+
+    listenScrollEvent = e => {
+        if (window.scrollY > 200) {
+            this.setState({menu: 1})
+        } else {
+            this.setState({menu: 0})
+        }
+        console.log(this.state);
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
+    render(){
             return(
-            <div className={s.mainBlock} onMouseDown={this.handleClick.bind(this)} onMouseUp={this.handleOut.bind(this)} >
-                <Menu />
+            <div className={s.mainBlock} onMouseDown={this.handleClick.bind(this)} onMouseUp={this.handleOut.bind(this)}>
+                <Menu menuColor={this.state.menu} dataColor="Hello"/>
                  <Slide/>
                  <Block headline={content.aboutUs.headline} text={content.aboutUs.text} bgColor={content.aboutUs.bgColor}/>
                 <Gallery/>
                  <ServiceBlock />
                 <Block headline={content.something.headline} text={content.something.text} bgColor={content.something.bgColor}/>
+                <Footer/>
 
                 {this.state.opacity ?
                     <Motion defaultStyle={{scale: (1)}} style={{scale: spring(0)}}>

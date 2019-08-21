@@ -1,11 +1,10 @@
 import React from "react";
-import s from "./../Block/Block.module.css";
 import f from "./ServiceBlock.module.css";
 import Hr from "../Hr";
 
 function ServiceBlock(props){
     return(
-        <div className={f.servicesBlock}>
+        <div className={f.servicesBlock} id="services">
             <div>
                 <h3 className={f.darkHeadline}>At Your Service</h3>
                 <Hr/>

@@ -6,8 +6,8 @@ export default
         bgColor: "#333",
     },
     something: {
-        headline: "We've got what you need!",
-        text: "Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!",
+        headline: "Let's Get In Touch!",
+        text: "Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!",
         bgColor: "white",
     },
 

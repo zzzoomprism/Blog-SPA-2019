@@ -1,6 +1,16 @@
+.colorNavBar{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.3) !important;
+}
 
-
-#mainNavBar{
+.mainNavBar{
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
     font-family: 'Raleway', sans-serif;

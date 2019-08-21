@@ -8,7 +8,7 @@ import {Motion, spring} from "react-motion";
 
 function Slide(props){
     return(
-        <div className={s.slideModule}>
+        <div className={s.slideModule} id="about">
             <Motion defaultStyle={{opacity: 0, translate: -200 }} style={{opacity: spring(1,{ stiffness: 30, damping: 30 }), translate: spring(0, { stiffness: 60, damping: 30 })}}>
                 {(style)=>(
             <div className={s.centerblock} >

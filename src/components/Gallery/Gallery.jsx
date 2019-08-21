@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./Gallery.module.css";
 import content from "./../../content";
-import styled from "styled-components";
 import {Motion, spring} from "react-motion";
 import ImageBlock from "./ImageBlock/ImageBlock";
 
@@ -78,7 +77,7 @@ class Gallery extends React.Component {
             );
 
         return (
-            <div className={s.gallery}>
+            <div className={s.gallery} id="portfolio">
                 <div className="row m-0 p-0">
                     {listItem}
                 </div>
