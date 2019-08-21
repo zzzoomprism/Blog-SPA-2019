@@ -28,3 +28,17 @@ h5{
     font-weight: 800;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 860px){
+    h2{
+        font-size: 25px;
+    }
+
+    h5{
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+}

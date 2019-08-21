@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+
 .colorNavBar{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -5,7 +7,7 @@
     padding-right: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-color: rgba(0,0,0,.3) !important;
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .mainNavBar{
@@ -16,4 +18,26 @@
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     background-color: transparent !important;
+}
+
+.brand{
+    font-family: 'Arizonia', cursive;
+    color: #00f2ff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navBarBrand{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navLink{
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 400;
+}
+
+.navUl a[class="active"] li{
+    border-bottom: 4px #00f2ff solid;
 }

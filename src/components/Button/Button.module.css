@@ -63,3 +63,9 @@
     background-color: rgba(51, 51, 51,1);
     color: white;
 }
+
+@media screen and (max-width: 860px){
+    .btnDrk,.btnLight, .btnPrimary{
+        font-size: 15px;
+    }
+}

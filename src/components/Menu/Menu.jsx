@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 
 function Menu(props){
         var menuClassName = "navbar fixed-top navbar-expand-lg navbar-dark bg-dark ";
+        var brand = "navbar-brand ";
         return <nav className={props.menuColor === 0 ? menuClassName + S.mainNavBar : menuClassName + S.colorNavBar}>
             <Link
                 activeClass="active"
@@ -12,7 +13,7 @@ function Menu(props){
                 smooth={true}
                 offset={0}
                 duration= {1000}
-            ><a className="navbar-brand" href="#">Start Bootstrap</a></Link>
+            ><a className={brand + S.navBarBrand} href="#"><span className={S.brand + " mr-2"}>Your</span> Source!</a></Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,7 @@ function Menu(props){
                         </button>
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav ml-auto" id={S.listOfRef}>
+                            <ul className={S.navUl + " navbar-nav ml-auto"}>
                                 <Link
                                     activeClass="active"
                                     to="about"
@@ -28,7 +29,7 @@ function Menu(props){
                                     smooth={true}
                                     offset={0}
                                     duration= {1000}
-                                ><li className="nav-item nav-link">
+                                ><li className={S.navLink + " nav-item nav-link"}>
                                    About
                                 </li>
                                 </Link>
@@ -40,7 +41,7 @@ function Menu(props){
                                     offset={0}
                                     duration= {500}
                                 >
-                                    <li className="nav-item nav-link">
+                                    <li className={S.navLink + " nav-item nav-link"}>
                                         Portfolio
                                     </li>
                                 </Link>
@@ -52,7 +53,7 @@ function Menu(props){
                                     offset={0}
                                     duration= {500}
                                 >
-                                    <li className="nav-item nav-link">
+                                    <li className={S.navLink + " nav-item nav-link"}>
                                         Services
                                     </li>
                                 </Link>
@@ -64,7 +65,7 @@ function Menu(props){
                                     offset={0}
                                     duration= {500}
                                 >
-                                    <li className="nav-item nav-link">
+                                    <li className={S.navLink + " nav-item nav-link"}>
                                         Contact
                                     </li>
                                 </Link>
