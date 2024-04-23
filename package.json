@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://zzzoomprism.github.io/reactjs-template1",
   "dependencies": {
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-motion": "^0.5.2",
