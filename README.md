@@ -1,7 +1,7 @@
 ### About the project
 
 ```
-When: in 2018
+When: in 2019
 What: Blog Single Page application
 Tech Stack: React.js, Bootstrap
 ```
