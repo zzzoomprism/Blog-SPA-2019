@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zzzoomprism.github.io/reactjs-template1",
+  "homepage": "https://zzzoomprism.github.io/Blog-SPA-2019",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
